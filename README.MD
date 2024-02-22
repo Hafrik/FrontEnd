@@ -1,2 +1,3 @@
 ## HafrikPlay
-Meeting with Dauda
+
+Creation of the react app for the project.
