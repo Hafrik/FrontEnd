@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <nav className="pb-2">
+    <nav className="pb-2 overflow-x-hidden">
       <hr />
       <div className="container-fluid d-flex justify-content-between ms-5">
         <p className="f-text">Hafrikplay Copyright © 2024</p>

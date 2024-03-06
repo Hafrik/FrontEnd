@@ -1,13 +1,13 @@
 import React from 'react'
 import '../App.css'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <>
       <nav className="d-sm-grid" style={{ background: '#171719' }}>
         <div className="row">
           <div className="col" style={{ margin: '10px 0px 0px 10%' }}>
-            <a className="navbar-brand text-white" href="./">
+            <a className="navbar-brand text-white" href="/signin">
               <img src="/images/green.png" alt="BrandName" />
             </a>
           </div>
@@ -44,6 +44,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      {props.children}
     </>
   )
 }
