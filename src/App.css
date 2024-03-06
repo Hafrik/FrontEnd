@@ -1,19 +1,22 @@
 .mother-container {
   background-color: #171718;
-  min-height: 100dvh;
+  max-height: 100% !important;
   color: #ffff;
-}
-
-.lg h4 {
-  margin: 0 auto;
 }
 
 .form-bg {
   background-color: #36363a;
   padding: 10px;
-  margin: 40px auto;
-  max-width: 30%;
+  margin: 4% auto;
+  max-width: 35%;
   min-height: 50px;
+  position: relative;
+}
+
+.font-awesome {
+  position: absolute;
+  left: 20%;
+  padding-top: 5px;
 }
 
 #email {
@@ -23,6 +26,10 @@
 .App {
   background-color: #171718;
   min-height: 100dvh;
+}
+
+:focus {
+  box-shadow: none !important;
 }
 
 ::placeholder {
@@ -45,3 +52,23 @@
   background-color: #14f195 !important;
 }
 
+button a {
+  color: #171719 !important;
+}
+
+.social-span {
+  margin-left: 40px !important;
+}
+
+@media screen and (max-width: 810px) {
+  .form-bg {
+    min-width: 350px;
+  }
+  .f-text {
+    font-size: 0.46em !important;
+  }
+}
+
+.f-text {
+  font-size: 1em;
+}
