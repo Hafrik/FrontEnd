@@ -46,7 +46,7 @@ const LoginForm = () => {
             type="email"
             className="form-input w-75 rounded text-white"
             id="email"
-            name="Email"
+            name="email"
             placeholder="Email address"
             value={email}
             onChange={(e) => {
