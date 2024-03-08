@@ -31,6 +31,7 @@ const LoginForm = () => {
         sign up or login
       </h4>
       <form
+        action="//"
         className="form text-capitalize rounded w-50"
         onSubmit={handleSubmit}
       >
@@ -44,14 +45,15 @@ const LoginForm = () => {
           <input
             type="email"
             className="form-input w-75 rounded text-white"
-            id="name"
+            id="email"
+            name="Email"
             placeholder="Email address"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
             }}
           />
-          {errors.email && <p className="text-danger fs-6">{errors.email}</p>}
+          {errors.email && <div className="text-danger fs-6">{errors.email}</div>}
         </div>
         <div className="">
           <label
@@ -63,14 +65,15 @@ const LoginForm = () => {
           <input
             type="password"
             className="form-input w-75 rounded text-white"
-            id="email"
+            id="password"
+            name="Password"
             placeholder="Password"
             value={password}
             onChange={(e) => {
               setPassword(e.target.value);
             }} 
           />
-          {errors.password && <p className="text-danger fs-6">{errors.password}</p>}
+          {errors.password && <div className="text-danger fs-6">{errors.password}</div>}
         </div>
         <button type="submit" className="btn mt-4 w-100">
           Continue
