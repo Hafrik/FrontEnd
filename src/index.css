@@ -44,7 +44,7 @@ a:hover {
 /* EMAILINPUT STYLES START HERE. */
 .emailInput {
     display: inline-block;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     /* margin-bottom: 104px; */
     flex-grow: 1;
 }
