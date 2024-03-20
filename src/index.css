@@ -163,15 +163,15 @@ input, button {
         padding: 0 4px;
     }
 
-    /* STYLES FOR EMAILINPUT. */
-    .emailInput {
-        margin-top: 100px;
-        margin-bottom: 350px;
+    /* STYLES FOR RESTPASSWORD. */
+    .password {
+        margin-top: 90px;
+        margin-bottom: 300px;
     }
-    .emailInput p:nth-child(1) {
+    .password p:nth-child(1) {
         font-size: 16px;
     }
-   .formCard {
+    .formCard {
         padding: 40px 30px;
     }
     input, button {
@@ -203,14 +203,14 @@ input, button {
         padding: 0 6px;
     }
 
-    /* STYLES FOR EMAILINPUT. */
-    .emailInput {
+    /* STYLES FOR RESETPASSWORD. */
+    .password {
         margin-top: 150px;
-        margin-bottom: 440px;
+        margin-bottom: 460px;
     }
     input, button {
-        width: 450px;
-        height: 60px;
+        width: 345px;
+        height: 50px;
     }
 
     /* STYLES FOR FOOTER. */
