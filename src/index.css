@@ -41,22 +41,22 @@ a:hover {
 }
 
 
-/* EMAILINPUT STYLES START HERE. */
-.emailInput {
+/* RESETPASSWORD STYLES START HERE. */
+.password {
     display: inline-block;
     margin-bottom: 70px;
     /* margin-bottom: 104px; */
     flex-grow: 1;
 }
-.emailInput p {
+.password p {
     color: #9898a0;
 }
 
-.emailInput p:nth-child(1) {
+.password p:nth-child(1) {
     color: #ffffff;
     font-size: 24px;
 }
-.emailInput p:nth-child(3) {
+.password p:nth-child(3) {
     color: #ffffff;
     font-weight: bold;
 }
@@ -68,8 +68,8 @@ p a:hover {
 }
 .formCard {
     background-color: #36363a;
-    /* padding: 45px 40px; */
-    padding: 64px 40px;
+    padding: 30px 40px;
+    /* padding: 64px 40px; */
     border-radius: 8px;
     text-align: center;
     display: inline-block;
@@ -77,6 +77,10 @@ p a:hover {
 
 .form_control div {
     color: red;
+}
+
+form div:nth-child(2) {
+    margin: 24px 0px;
 }
 
 label {
@@ -101,7 +105,7 @@ button {
     color: #36363a;
     border-radius: 4px;
     border: none;
-    margin: 24px 0;
+    /* margin: 24px 0; */
     font-weight: bold;
 }
 input, button {
@@ -163,15 +167,15 @@ input, button {
         padding: 0 4px;
     }
 
-    /* STYLES FOR EMAILINPUT. */
-    .emailInput {
-        margin-top: 100px;
-        margin-bottom: 350px;
+    /* STYLES FOR RESTPASSWORD. */
+    .password {
+        margin-top: 90px;
+        margin-bottom: 300px;
     }
-    .emailInput p:nth-child(1) {
+    .password p:nth-child(1) {
         font-size: 16px;
     }
-   .formCard {
+    .formCard {
         padding: 40px 30px;
     }
     input, button {
@@ -203,14 +207,14 @@ input, button {
         padding: 0 6px;
     }
 
-    /* STYLES FOR EMAILINPUT. */
-    .emailInput {
+    /* STYLES FOR RESETPASSWORD. */
+    .password {
         margin-top: 150px;
-        margin-bottom: 440px;
+        margin-bottom: 460px;
     }
     input, button {
-        width: 450px;
-        height: 60px;
+        width: 345px;
+        height: 50px;
     }
 
     /* STYLES FOR FOOTER. */

@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
     return <nav className="navBar">
-        <img src="./Images/Hafrikplay Logo.png" alt="Hafrikplay Logo" />
+        <img src="./Images/Hafrikplay Logo.png" alt="Hafrikplay Logo" className="hafrikLogo"/>
             <div className="menus">
                 <ul>
                     <li>
