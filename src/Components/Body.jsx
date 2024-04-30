@@ -2,13 +2,13 @@ import React from "react";
 
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-import EmailInput from "../Components/EmailInput";
+import forgetPassword from "../routes/Password/forgetPassword";
 
 const Body = () => {
 	return (
 		<body>
 			<NavBar />
-			<EmailInput />
+			<forgetPassword />
 			<Footer />
 		</body>
 	);
