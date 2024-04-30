@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 
-const EmailInput = () => {
+const forgetPassword = () => {
 
     const initialValues = {email: ""};
     const [formValues, setFormValues] = useState(initialValues);
@@ -58,4 +58,4 @@ const EmailInput = () => {
     );
 }
 
-export default EmailInput;
+export default forgetPassword;
