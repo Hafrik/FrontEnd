@@ -23,7 +23,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        'bg-transparent relative h-[75px] mt-[80px] w-[255px] ml-[145px] py-[14px] px-3 overflow-hidden ',
+        'bg-transparent relative h-[60px] mt-[56px] w-[211px] ml-[113px] py-[10px] px-3 overflow-hidden ',
         containerClassName
       )}
       style={{
@@ -33,7 +33,7 @@ export function Button({
     >
       <div
         className="absolute inset-0"
-        style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
+        style={{ borderRadius: `calc(${borderRadius} * 0.5)` }}
       >
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
@@ -94,7 +94,7 @@ export const MovingBorder = ({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
-        className="absolute h-full w-full"
+        className="absolute h-20 w-full"
         width="100%"
         height="100%"
         {...otherProps}

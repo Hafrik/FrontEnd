@@ -1,6 +1,7 @@
-import { NavLink, Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Logo from '../home-images/hafrikplay-logo.png';
 import { useState } from 'react';
+import { FaRegUser } from 'react-icons/fa6';
 
 const navigation = [
   { name: 'About', href: '/About' },
@@ -10,6 +11,7 @@ const navigation = [
 
 const HomeNavbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
+  const location = useLocation();
 
   const handleMenuIcon = () => {
     // setMenuIcon(true);
@@ -17,7 +19,7 @@ const HomeNavbar = () => {
   };
 
   return (
-    <nav className="w-full sm:px-6 lg:pl-[130px] lg:pb-[40px] lg:pt-[50px] lg:pr-[50px]">
+    <nav className="w-full sm:px-6 lg:pl-[113px] lg:pb-[40px] lg:pt-[30px] lg:pr-[50px]">
       <div className="absolute right-3 top-3 " onClick={handleMenuIcon}>
         <button>
           <svg
@@ -37,61 +39,35 @@ const HomeNavbar = () => {
       <div className="relative flex h-16 items-center justify-between">
         <Link to="/">
           <img
-            className="absolute sm:static left-3 top-3 w-[100px] sm:w-[160px]"
+            className="absolute sm:static left-3 top-3 w-[100px] sm:w-[100px]"
             src={Logo}
             alt="hafrikplay logo"
-            width={160}
           />
         </Link>
         <div className="hidden items-center w-1/2 justify-between sm:ml-6 sm:flex">
-          <div className="flex gap-[20px]">
+          <ul className="flex gap-[20px] ">
             {navigation.map((item) => (
-              <NavLink
+              <li
                 key={item.name}
-                to={item.href}
-                className={({ isActive }) => {
-                  return (
-                    'rounded-md flex  text-white text-[20px] font-semibold p-[10px]  ' +
-                    (isActive
-                      ? ' bg-gray-900 text-white'
-                      : ' text-gray-300 hover:bg-white/[0.2] hover:text-[#14F195]')
-                  );
-                }}
+                className={
+                  location.pathname === `{item.href}`
+                    ? 'text-gray-300  hover:text-gray-500'
+                    : ''
+                }
               >
-                {item.name}
-              </NavLink>
+                <Link
+                  to={item.href}
+                  className="rounded-md text-white text-[1.05rem] font-semibold p-[10px] hover:text-[#14F195] hover:bg-white/[0.2]"
+                >
+                  {item.name}
+                </Link>
+              </li>
             ))}
-          </div>
-          <div className="absolute sm:static bg-[#14F195] w-[200px] py-[17px] mr-[50px] cursor-pointer rounded hover:bg-[#25ce88]">
+          </ul>
+          <div className="absolute sm:static bg-[#14F195] w-[160px] py-[12px] mr-[50px] cursor-pointer rounded hover:bg-[#25ce88]">
             <Link className="flex justify-center items-center gap-[10px]">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                height={35}
-                width={35}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  {' '}
-                  <path
-                    d="M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7Z"
-                    stroke="#000000"
-                    strokeWidth="1"
-                  ></path>{' '}
-                  <path
-                    d="M5 19.5C5 15.9101 7.91015 13 11.5 13H12.5C16.0899 13 19 15.9101 19 19.5V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V19.5Z"
-                    stroke="#000000"
-                    strokeWidth="1"
-                  ></path>{' '}
-                </g>
-              </svg>
-              <p className="text-[20px] font-semibold">Login</p>
+              <FaRegUser className="h-6 w-6" />
+              <p className="text-[1rem] font-semibold">Login</p>
             </Link>
           </div>
         </div>
