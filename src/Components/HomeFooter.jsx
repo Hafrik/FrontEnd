@@ -1,4 +1,5 @@
-import Logo from '../home-images/hafrikplay-logo.png';
+import Logo from '../../public/Images/Hafrikplay Logo.png';
+
 import { BsFacebook } from 'react-icons/bs';
 import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
