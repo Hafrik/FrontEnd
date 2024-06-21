@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const HomeFooter = () => {
   return (
-    <footer className="bg-[#171719] pl-[113px] flex-col sm:flex-row flex gap-[50px] sm:justify-center sm:gap-[350px] pt-[150px] pb-[250px]">
+    <footer className="bg-[#171719] pl-[113px] flex-col sm:flex-row flex gap-[30px] sm:justify-center sm:gap-[350px] pt-[150px] pb-[250px]">
       <div className="sm:">
         <img src={Logo} alt="hafrikplay-logo" className="w-[112px] h-[45px]" />
         <p className="text-white my-[5px] text-[16px] leading-[24px]">
