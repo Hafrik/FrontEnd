@@ -1,6 +1,6 @@
 import Man from '../home-images/bg-man.jpg';
 
-import Victor from '../home-images/viktor-forgacs.png';
+import Victor from '../home-images/viktor-forgacs.jpg';
 import HomeNavbar from './HomeNavbar';
 import { Link } from 'react-router-dom';
 import HomeFooter from './HomeFooter';

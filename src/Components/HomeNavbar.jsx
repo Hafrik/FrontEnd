@@ -1,5 +1,5 @@
 import { useLocation, Link } from 'react-router-dom';
-import Logo from '../home-images/hafrikplay-logo.png';
+import Logo from '../../public/Images/Hafrikplay Logo.png';
 import { useState } from 'react';
 import { FaRegUser } from 'react-icons/fa6';
 

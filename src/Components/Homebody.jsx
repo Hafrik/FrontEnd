@@ -1,8 +1,8 @@
-import Card2 from '../home-images/card-2.png';
-import Card3 from '../home-images/card-3.png';
-import Unsplash2 from '../home-images/unsplash-2.png';
-import Apple from '../home-images/app-store.png';
-import Google from '../home-images/google-play.png';
+import Card2 from '../home-images/card-2.jpg';
+import Card3 from '../home-images/card-3.jpg';
+import Unsplash2 from '../home-images/unsplash-2.jpg';
+import Apple from '../home-images/app-store.jpg';
+import Google from '../home-images/google-play.jpg';
 import { Link } from 'react-router-dom';
 
 const Homebody = () => {
@@ -20,8 +20,8 @@ const Homebody = () => {
               listen to African Talents for free.
             </p>
             <div className="flex w-[667px] mt-[70px]">
-              <img src={Card2} className="w-full" alt="" />
-              <img src={Card3} className="w-full" alt="" />
+              <img src={Card2} className="w-full" alt="" loading="lazy" />
+              <img src={Card3} className="w-full" alt="" loading="lazy" />
             </div>
 
             <div className="absolute left-[35%] top-[51%]">
@@ -87,6 +87,7 @@ const Homebody = () => {
               src={Google}
               alt="google-play"
               className="w-[164px] h-[51px]"
+              loading="lazy"
             />
           </a>
         </div>
