@@ -5,12 +5,17 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ResetPassword } from './routes/Password';
 import Homepage from './Components/Homepage';
+import Login from './routes/Login/Login';
 
 const router = createBrowserRouter([
   // Created a router to navigate users
   {
     path: '/',
     element: <Homepage />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
   },
   {
     path: '/password',
