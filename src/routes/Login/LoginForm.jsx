@@ -6,6 +6,7 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Validation from './Validation';
+import Header from './Header';
 
 export const LoginForm = () => {
 
@@ -21,7 +22,11 @@ export const LoginForm = () => {
 
 
   return (
-    <div>
+
+    <div className='App'>
+      <section>
+        <Header />
+      </section>
       <h4 className="text-white text-center text-capitalize mt-4">
         sign up or login
       </h4>
@@ -93,7 +98,7 @@ export const LoginForm = () => {
       </form>
 
       <div className="foot d-sm-flex justify-content-between mt-5 pt-4">
-        <div className="text-white ps-5 mt-6">
+        <div className="text-white ps-5">
           <p>Hafrikplay Copyright &copy; 2022</p>
         </div>
         <div className="d-sm-flex text-white">
@@ -101,7 +106,7 @@ export const LoginForm = () => {
           <p className="me-3">Terms and Conditions</p>
           <p>Download</p>
         </div>
-        <div className="text-white pe-5 mt-6">
+        <div className="text-white pe-5 d-flex">
           <Link to="/" className="pe-3">
             <BsFacebook className="text-white" />
           </Link>

@@ -65,7 +65,7 @@ const HomeNavbar = () => {
             ))}
           </ul>
           <div className="absolute sm:static bg-[#14F195] w-[160px] py-[12px] mr-[50px] cursor-pointer rounded hover:bg-[#25ce88]">
-            <Link className="flex justify-center items-center gap-[10px]">
+            <Link to='/login' className="flex justify-center items-center gap-[10px]">
               <FaRegUser className="h-6 w-6" />
               <p className="text-[1rem] font-semibold">Login</p>
             </Link>
