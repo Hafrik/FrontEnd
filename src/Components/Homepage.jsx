@@ -13,7 +13,7 @@ const Homepage = () => {
     <>
       <header
         className="bg-cover bg-top bg-no-repeat h-[25rem] sm:h-[41rem] bg-gray-500"
-        style={{ backgroundImage: `url(${Man})`, backgroundSize: '100% auto' }}
+        style={{ backgroundImage: `url(${Man})`, backgroundSize: '100% 100%' }}
       >
         <HomeNavbar />
         <h1 className="text-[2.5rem] sm:text-[7.5rem] leading-[2.5rem] sm:leading-[8rem] text-white text-center sm:text-start sm:ml-[7rem] mt-[2.5rem] sm:mt-[1.875rem]">

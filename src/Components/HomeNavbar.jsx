@@ -1,7 +1,8 @@
 import { useLocation, Link } from 'react-router-dom';
-import Logo from '../../public/Images/Hafrikplay Logo.png';
+import Logo from '/Images/Hafrikplay Logo.png';
 import { useState } from 'react';
 import { FaRegUser } from 'react-icons/fa6';
+import { CiMenuBurger } from 'react-icons/ci';
 
 const navigation = [
   { name: 'About', href: '/About' },
@@ -20,21 +21,11 @@ const HomeNavbar = () => {
 
   return (
     <nav className="w-full sm:px-6 lg:pl-[7.063rem] lg:pb-[2.5rem] lg:pt-[1.875rem] lg:pr-[3.125rem]">
-      <div className="absolute right-3 top-3 " onClick={handleMenuIcon}>
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-10 h-10"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
+      <div
+        className="absolute right-3 top-3 sm:hidden"
+        onClick={handleMenuIcon}
+      >
+        <CiMenuBurger className="w-8 h-8" />
       </div>
       <div className="relative flex h-16 items-center justify-between">
         <Link to="/">
@@ -75,7 +66,7 @@ const HomeNavbar = () => {
           </div>
         </div>
         {menuIcon ? (
-          <nav className="sm:hidden absolute w-full top-0 left-0 h-[25rem] bg-[#171719]">
+          <nav className="hidden absolute w-full top-0 left-0 h-[25rem] bg-[#171719]">
             <div className="space-y-1 px-2 pb-3 pt-2 bg-white/[0.2] text-[#14F195]">
               {navigation.map((item) => (
                 <NavLink
