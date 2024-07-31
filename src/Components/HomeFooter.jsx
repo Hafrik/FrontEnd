@@ -1,4 +1,4 @@
-import Logo from '../../public/Images/Hafrikplay Logo.png';
+import Logo from '/Images/Hafrikplay Logo.png';
 
 import { BsFacebook } from 'react-icons/bs';
 import { FaTwitter } from 'react-icons/fa';
