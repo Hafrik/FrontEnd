@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import {
   motion,
@@ -23,7 +22,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        'bg-transparent relative h-[60px] mt-[56px] w-[211px] ml-[113px] py-[10px] px-3 overflow-hidden ',
+        'bg-transparent relative h-[3.75rem] mt-[3.5rem] w-[13.188rem] ml-10 sm:ml-[7.063rem] py-[0.625rem] px-3 overflow-hidden ',
         containerClassName
       )}
       style={{
