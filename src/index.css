@@ -2,7 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --rotate {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
 
+.moving-border {
+  --blue: #0173ff;
+  --radius: 50px;
+  --rotate: 0deg;
+  position: relative;
+  width: 13.4rem;
+  height: 3.6rem;
+  margin-left: 7rem;
+  margin-top: 5.25rem;
+  border-radius: 4px;
+  .fancy {
+    position: absolute;
+    inset: 0;
+    &:before {
+      content: '';
+      background: conic-gradient(
+        from var(--rotate),
+        transparent 0%,
+        white 5%,
+        transparent 10%
+      );
+      position: absolute;
+      inset: 0;
+      animation: rotate 2s linear infinite;
+    }
+    &:after {
+      content: '';
+      background: transparent;
+      position: absolute;
+      inset: 2px;
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    --rotate: 360deg;
+  }
+}
+
+.comm-hover:hover {
+  box-shadow: 0 0 5px#14F195, 0 0 25px#14F195, 0 0 50px#14F195, 0 0 200px#14F195;
+  /* -webkit-box-reflect: below 1px linear-gradient; */
+  filter: hue-rotate(90deg);
+}
 
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
 

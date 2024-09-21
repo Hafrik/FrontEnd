@@ -4,7 +4,6 @@ import Victor from '../home-images/viktor-forgacs.jpg';
 import HomeNavbar from './HomeNavbar';
 import { Link } from 'react-router-dom';
 import HomeFooter from './HomeFooter';
-import { Button } from './MovingBorder';
 import Homebody from './Homebody';
 import { LuMusic } from 'react-icons/lu';
 
@@ -22,18 +21,16 @@ const Homepage = () => {
         <p className="text-white text-center sm:text-start sm:ml-[7.25rem] mt-[0.313rem] sm:mt-[1.125rem] text-[0.938rem] sm:text-[1rem] tracking-wide">
           Discover, stream and share in a constantly expanding mix of music.
         </p>
-        <div>
-          <Button borderRadius="15px" className="border-neutral-200">
-            <Link to="/musicplayer">
-              <div className="flex justify-center items-center  gap-[0.625rem] bg-[#14F195] hover:bg-[#25ce88] py-[1.063rem] ml-[1px] w-[15.625rem]">
-                <LuMusic className="text-black w-6 h-6" />
-                <p className="text-[20px] text-black font-semibold">
-                  Play music
-                </p>
-              </div>
-            </Link>
-          </Button>
-        </div>
+
+        <button className="moving-border">
+          <div className="fancy"></div>
+          <Link to="/musicplayer">
+            <div className="relative flex justify-center items-center  gap-[0.625rem] bg-[#14F195] hover:bg-[#25ce88] mx-auto h-[3.5rem] w-[13.188rem] rounded">
+              <LuMusic className="text-black w-6 h-6" />
+              <p className="text-[20px] text-black font-semibold">Play music</p>
+            </div>
+          </Link>
+        </button>
       </header>
       <Homebody />
       <section
