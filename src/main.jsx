@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ResetPassword } from './routes/Password';
 import Homepage from './Components/Homepage';
-import Login from './routes/Login/Login';
+import { LoginForm } from './routes/Login/LoginForm';
+// import Login from './routes/Login/Login'; Changed my Ayo-lenz
+
 
 const router = createBrowserRouter([
   // Created a router to navigate users
@@ -15,7 +18,8 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <Login />,
+    element: <LoginForm />,
+    // element: <Login /> Removed by Ato-lenz
   },
   {
     path: '/password',
